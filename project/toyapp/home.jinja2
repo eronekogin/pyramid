@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>TOY APP</title>
+    <link rel="stylesheet"
+        href="{{ request.static_url('toyapp:static/app.css') }}" />
+</head>
+<body>
+    <h1>Hi {{ name }}</h1>
+    <br>
+    <form action="{{ request.route_url('search_json')}}" method="post">
+        <input type="checkbox" name="choice1" value="Apple"> Apple
+        <br>
+        <input type="checkbox" name="choice2" value="Pear"> Pear
+        <br>
+        <input type="submit" value="submit">
+    </form>
+</body>
+</html>

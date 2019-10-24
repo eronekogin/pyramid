@@ -1,0 +1,5 @@
+.vscode/
+misc.py
+venv/
+__pycache__/
+*.egg-info/
